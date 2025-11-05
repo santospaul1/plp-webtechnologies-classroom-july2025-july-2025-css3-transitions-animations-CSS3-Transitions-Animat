@@ -1,0 +1,64 @@
+body {
+  font-family: sans-serif;
+  padding: 20px;
+  background-color: #f0f0f0;
+  transition: background-color 0.5s ease;
+}
+
+h1 {
+  text-align: center;
+}
+
+/* Part 1: Button Hover Animation */
+.animated-btn {
+  padding: 10px 20px;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.animated-btn:hover {
+  transform: scale(1.1);
+  background-color: #2980b9;
+}
+
+/* Part 3: Box Animation */
+#animated-box {
+  width: 100px;
+  height: 100px;
+  background-color: coral;
+  margin-top: 10px;
+  transition: transform 0.5s ease;
+}
+
+.animate {
+  transform: rotate(360deg) scale(1.5);
+}
+
+/* Part 3: Modal Animation */
+.modal {
+  position: fixed;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: white;
+  padding: 20px;
+  border: 2px solid #333;
+  animation: fadeIn 0.5s ease forwards;
+}
+
+.hidden {
+  display: none;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translate(-50%, -60%);
+  }
+  to {
+    opacity: 1;
+    transform: translate(-50%, -50%);
+  }
+}
