@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>✨ Animated Interactive Experience</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <h1>🎨 CSS + JS Animation Playground</h1>
+
+  <!-- Part 1: CSS Animation -->
+  <button class="animated-btn">Hover Me!</button>
+
+  <!-- Part 3: JS-triggered Animation -->
+  <section class="box-section">
+    <button onclick="animateBox()">Animate Box</button>
+    <div id="animated-box"></div>
+  </section>
+
+  <!-- Part 3: Modal with JS + CSS -->
+  <section class="modal-section">
+    <button onclick="toggleModal(true)">Show Modal</button>
+    <div id="modal" class="modal hidden">
+      <p>This is a modal popup!</p>
+      <button onclick="toggleModal(false)">Close</button>
+    </div>
+  </section>
+
+  <!-- Part 2: Function Output -->
+  <section class="function-section">
+    <h2>📚 Function Demo</h2>
+    <p>Result: <span id="function-result"></span></p>
+    <button onclick="runFunctionDemo()">Run Function</button>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
